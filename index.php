@@ -19,11 +19,11 @@
     $data   = file_get_contents('https://pilkada2017.kpu.go.id/api/hasil.json');
     $decode = json_decode($data, true);
 ?>
-        <nav class="navbar sticky-top navbar-toggleable-md navbar-inverse bg-inverse">
+        <nav class="navbar sticky-top navbar-toggleable navbar-inverse bg-inverse">
             <a class="navbar-brand" href="#">
                 <img src="img/logo_pilkada.png" width="30" height="30" alt=""> Pilkada 2017
             </a>
-            <a class="btn-btn-secondary ml-auto" href="https://github.com/dhanyn10/pilkada2017" target="_blank">Fork <i class="fa fa-fork"></i></a>
+            <a class="ml-auto btn btn-warning btn-sm" href="https://github.com/dhanyn10/pilkada2017" target="_blank">Fork</a>
         </nav>
         <div class="container">
             <table class="table">
