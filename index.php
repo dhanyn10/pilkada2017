@@ -39,41 +39,39 @@
                 </ul>
             </div>
         </nav>
-        <div class="container">
-            <div class="row">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Wilayah</th>
-                            <th>Nama Ketua</th>
-                            <th>Nama Wakil</th>
-                            <th>Jumlah Suara</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <?php
-                    $rekamWilayah   = "";
-                    $countpasangan  = 0;
-                    for($a = 1; $a < count($decode); $a++):
-                        $wilayah = $decode[$a]['namaWilayah'];
-                        if($rekamWilayah != $wilayah) :
-                            $rekamWilayah = $wilayah;
-                    ?>
-                    <?php
-                        endif;
-                    ?>
+        <div class="container-fluid">
+            <table class="table">
+                <thead>
                     <tr>
-                        <td colpan="3"><?php echo $rekamWilayah; ?></td>
-                        <td><?php echo $decode[$a]['namaKd']?></td>
-                        <td><?php echo $decode[$a]['namaWkd']?></td>
-                        <td><?php echo $decode[$a]['jumlahSuara']?></td>
+                        <th>Wilayah</th>
+                        <th>Nama Ketua</th>
+                        <th>Nama Wakil</th>
+                        <th>Jumlah Suara</th>
                     </tr>
-                    <?php
-                    endfor;
-                    ?>
-                    </tbody>
-                </table>
-            </div>
+                </thead>
+                <tbody>
+                <?php
+                $rekamWilayah   = "";
+                $countpasangan  = 0;
+                for($a = 1; $a < count($decode); $a++):
+                    $wilayah = $decode[$a]['namaWilayah'];
+                    if($rekamWilayah != $wilayah) :
+                        $rekamWilayah = $wilayah;
+                ?>
+                <?php
+                    endif;
+                ?>
+                <tr>
+                    <td colpan="3"><?php echo $rekamWilayah; ?></td>
+                    <td><?php echo $decode[$a]['namaKd']?></td>
+                    <td><?php echo $decode[$a]['namaWkd']?></td>
+                    <td><?php echo $decode[$a]['jumlahSuara']?></td>
+                </tr>
+                <?php
+                endfor;
+                ?>
+                </tbody>
+            </table>
         </div>
     </body>
 </html>
