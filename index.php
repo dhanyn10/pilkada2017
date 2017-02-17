@@ -53,7 +53,7 @@
                 <?php
                 $rekamWilayah   = "";
                 $countpasangan  = 0;
-                for($a = 1; $a < count($decode); $a++):
+                for($a = 0; $a < count($decode); $a++):
                     $wilayah = $decode[$a]['namaWilayah'];
                     if($rekamWilayah != $wilayah) :
                         $rekamWilayah = $wilayah;
@@ -62,7 +62,7 @@
                     endif;
                 ?>
                 <tr>
-                    <td colpan="3"><?php echo $rekamWilayah; ?></td>
+                    <td><?php echo $rekamWilayah; ?></td>
                     <td><?php echo $decode[$a]['namaKd']?></td>
                     <td><?php echo $decode[$a]['namaWkd']?></td>
                     <td><?php echo $decode[$a]['jumlahSuara']?></td>
