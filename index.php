@@ -7,11 +7,11 @@
         <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet"/>
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="tether/css/tether.min.css" rel="stylesheet"/>
-        <link href="http://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet"/>
+        <link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet"/>
         <script src="js/jquery.js"></script>
         <script src="tether/js/tether.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="http://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
         <script>
             $(document).ready(function(){
                 $('.table').DataTable();
